@@ -4,22 +4,22 @@ import { Linkedin, Mail } from "lucide-react";
 function Team() {
   const team = [
     {
-      name: "Dr. Alistair Ramo",
+      name: "Karl Saliga",
       role: "Lead Consultant & Founder",
-      bio: "With over 20 years in organizational development across the Pacific, Alistair is passionate about empowering local institutions.",
-      img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=500" 
+      bio: "With over 20 years in organizational development across the Pacific, Karl is passionate about empowering local institutions.",
+      img: "/oc-web/karl.jpg" // Added leading slash
     },
     {
-      name: "Grace Honi",
+      name: "Dr. Jerry B. Siota",
       role: "Senior Strategy Advisor",
-      bio: "Grace specializes in strategic planning and project management, driving results for both public and private sectors.",
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=500" 
+      bio: "Jerry specializes in strategic planning and project management, driving results for both public and private sectors.",
+      img: "/oc-web/jerry.jpg" // Added leading slash
     },
     {
-      name: "Samson Wale",
+      name: "Dr. Derek Mane",
       role: "Capacity Building Specialist",
-      bio: "Samson designs and delivers impactful training programs, fostering leadership and skill growth in teams.",
-      img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=500"
+      bio: "Derek designs and delivers impactful training programs, fostering leadership and skill growth in teams.",
+      img: "/oc-web/dmane.jpg" // Added leading slash
     }
   ];
 
@@ -52,7 +52,9 @@ function Team() {
                   src={member.img}
                   alt={member.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
+                  priority={i === 0} // Load first image faster
                 />
                 
                 {/* Overlay with Socials on Hover */}
