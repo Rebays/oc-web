@@ -3,25 +3,31 @@ import { Linkedin, Mail } from "lucide-react";
 
 function Team() {
   const team = [
-    {
-      name: "Karl Saliga",
-      role: "Lead Consultant & Founder",
-      bio: "With over 20 years in organizational development across the Pacific, Karl is passionate about empowering local institutions.",
-      img: "/oc-web/karl.jpg" // Added leading slash
-    },
-    {
-      name: "Dr. Jerry B. Siota",
-      role: "Senior Strategy Advisor",
-      bio: "Jerry specializes in strategic planning and project management, driving results for both public and private sectors.",
-      img: "/oc-web/jerry.jpg" // Added leading slash
-    },
-    {
-      name: "Dr. Derek Mane",
-      role: "Capacity Building Specialist",
-      bio: "Derek designs and delivers impactful training programs, fostering leadership and skill growth in teams.",
-      img: "/oc-web/dmane.jpg" // Added leading slash
-    }
-  ];
+  {
+    name: "Karl Saliga",
+    role: "Lead Consultant & Founder",
+    bio: "With over 20 years in organizational development across the Pacific, Karl specializes in institutional reform and diagnostic consultancy for high-impact organizations.",
+    img: "/oc-web/karl.jpg"
+  },
+  {
+    name: "Dr. Jerry B. Siota",
+    role: "Senior Strategy Advisor",
+    bio: "A specialist in strategic planning and project management, Dr. Siota drives structural results for both public sector institutions and private enterprises.",
+    img: "/oc-web/jerry.jpg"
+  },
+  {
+    name: "Liam Sau",
+    role: "Project Operations Manager", 
+    bio: "Liam oversees complex project delivery and operational workflows, ensuring that organizational diagnostics translate into actionable, sustainable results.",
+    img: "/oc-web/liam.jpg" // Updated to unique image path
+  },
+  {
+    name: "Dr. Derek Mane",
+    role: "Capacity Building Specialist",
+    bio: "Dr. Mane designs and delivers high-level training frameworks, fostering leadership and technical skill growth within the Solomon Islands' workforce.",
+    img: "/oc-web/dmane.jpg"
+  }
+];
 
   return (
     <section id="team" className="bg-white px-6 py-24 dark:bg-zinc-950 md:px-12">
